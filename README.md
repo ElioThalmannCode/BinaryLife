@@ -1,6 +1,4 @@
-# BinaryLife
-The Game of Life.
----
+
 ###### Elio Thalmann
 ## 1.Wie führt man das Game aus?
 
