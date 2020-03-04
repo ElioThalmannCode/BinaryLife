@@ -31,7 +31,7 @@ Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidung
 
 ## 3.Was gibt es für Elemente in diesem Spiel.
 
-#### 3.1 NPC
+### 3.1 NPC
 NPC ist Englisch und heisst "Non-player character" was soviel heisst wie "Nicht-Spieler-Charakter" also eine Person der du im Spiel begegnest aber der du keine Befehle geben kannst.
 
 So sieht die ```class``` des NPC aus:
@@ -50,7 +50,7 @@ class npc():
         self.looks      =   looks
         self.iq         =   iq
 ```
-#### 3.2 hood
+### 3.2 hood
 Hood ist die englische Abkürzung für Nachbarschaft. Das ist der Ort andem die Person die du spielst reingeboren wird.
 So sieht die hood ```class``` aus:
 ```python
