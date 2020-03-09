@@ -1,5 +1,6 @@
-# BinaryLife
-The Game of Life.
+# BinaryLife Dokumentation
+#### The Game about Live
+
 ---
 ###### Elio Thalmann
 ## 1.Wie führt man das Game aus?
@@ -11,6 +12,7 @@ The Game of Life.
 ```bash
 sudo apt install python3 #ubuntu
 sudo dnf install python3 #fedora/debian
+git clone https://github.com/ElioThalmannCode/BinaryLife
 ```
 ##### Windows:
 Tutorial: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
@@ -23,6 +25,7 @@ brew install python3
 a. Gehe zum Zielordner mit bash oder cmd.
 b. führe diesen Befehl aus:
 ```bash
+git clone https://github.com/ElioThalmannCode/BinaryLife
 python3 main.py
 ```
 ## 2.Was ist die Story von diesem Spiel?

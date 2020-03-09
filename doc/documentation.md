@@ -12,6 +12,7 @@
 ```bash
 sudo apt install python3 #ubuntu
 sudo dnf install python3 #fedora/debian
+git clone https://github.com/ElioThalmannCode/BinaryLife
 ```
 ##### Windows:
 Tutorial: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
@@ -24,10 +25,11 @@ brew install python3
 a. Gehe zum Zielordner mit bash oder cmd.
 b. führe diesen Befehl aus:
 ```bash
+git clone https://github.com/ElioThalmannCode/BinaryLife
 python3 main.py
 ```
-## 2.Was ist die Story von diesem Spiel?
-Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidungen die der Spieler in dem Spiel getroffen hat. Es gibt kein genaues Ziel und auch kein genaues Ende es wird einfach so lange gespielt bis du stirbst oder du aufgibst.
+## 2.Kurzfassung
+Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidungen die der Spieler in dem Spiel getroffen hat. Es gibt kein genaues Ziel und auch kein genaues Ende es wird einfach so lange gespielt bis du stirbst oder du aufgibst. Die Story besteht aus zufälligen Ereignissen die auf den Spieler treffen. Das Ziel dieses Spiels ist mit den Ereignissen und Schwierigkeiten des Lebens umzugehen.
 
 ## 3.Was gibt es für Elemente in diesem Spiel.
 
@@ -51,7 +53,7 @@ class npc():
         self.iq         =   iq
 ```
 #### 3.2 hood
-Hood ist die englische Abkürzung für Nachbarschaft. Das ist der Ort andem die Person die du spielst reingeboren wird.
+Hood ist die englische Abkürzung für Nachbarschaft. Das ist der Ort anderem die Person die du spielst reingeboren wird.
 So sieht die hood ```class``` aus:
 ```python
 class hood():
@@ -60,7 +62,7 @@ class hood():
         self.education  =   education
 ```
 ### 3.3 Familie
-Die Familie ist sehr wichtig in deinem Spielverlauf! Wenn du eine reiche Familie hast sind die Chancen höher das du gute Bildung und ein sicheres Leben erhälst. Es wird die gleiche ```class``` wie bei NPC verwendet.
+Die Familie ist sehr wichtig in deinem Spielverlauf! Wenn du eine reiche Familie hast sind die Chancen höher das du gute Bildung und ein sicheres Leben erhältst. Es wird die gleiche ```class``` wie bei NPC verwendet.
 
 ### 3.4 yourself
 Yourself ist der Spieler den man gerade am spielen ist. Diese ```class``` bestimmt dein Aussehen, Name, iq usw. Dies ist sehr wichtig im ganzen Spielverlauf.
@@ -80,3 +82,11 @@ class yourself_class():
 usw.
 ## 4. Namen
 Es gibt enorm viele Namen in diesem Spiel. Es wird ein zufälliger Name für einen neuen Spieler ausgewählt.
+## 5. Exposé
+### 5.1 Inhalt:
+Du spielst ein Spieler der zufällig generiert wird. In diesem Spiel gibt es immer wieder zufällige ereignisse die random passieren. Die ereignisse werden nach Alter angepasst. Das Spiel startet in dem du ein kleines Kind bist. Du kannst in diesen Jahren noch nicht viel entscheiden dies übernehmen nämlich deine Eltern für dich. Sobald du dann aber in die Schule gehst, sobald du etwas älter bist, gibt es schon die ersten kindlichen Ereignisse wie zb. du wirst mal wieder von deinem Lehrer zum nachsitzen verdonnert und bekommst ein Brief heim oder du zerstörst aus Versehen das Fenster deines Nachbaren. Dies ist aber auch der Teil in deinem Leben wo du dich für deinen zukünftigen Beruf qualifizieren musst. Wenn du schlecht in der Schule bist kannst du nicht auf die höheren Schulen gehen wo du dann auch in hohe Einkommensstufen kommst. Da kommen wir auch zum nächsten Teil deines Lebens, dem Leben als junger Erwachsener. Das ist ein sehr wichtiger Abschnitt in deinem Leben. In diesem Teil wirst du in deinen Job einsteigen, einige positive wie auch negative Ereignisse werden dir in Nachtclubs passieren und vieleicht wirst du ein Partner fürs Leben erhalten. Du kannst auch hookups und Onlineverabredungen 
+### 5.2 Zielgeräte
+Dieses Spiel kann auf jedem Gerät gespielt werden solange es Python unterstützt.
+### 5.3 Positionierung
+Dieses Spiel ist ein 1/1 Klon zu dem 2018 erschienenen Spiel Bitlife. Es ist ein "Casual Game". Das Spiel ist für jede Altersgruppe fast konzipiert ausser der zu jungen Spieler da es die Option Alkohol oder Drogen zu konsumieren gibt sobald man in ein Nachtclub geht. Bei dem Spiel wird besonders auf das mehrmals durchspielen gesetzt da jeder neuer Spielversuch ein ganz neues Spielerlebnis ist.
+### Risiken
