@@ -2,7 +2,6 @@
 
 ---
 ##  1. <a name='TableofContent'></a>Table of Content
-
 <!-- vscode-markdown-toc -->
 * 1. [Table of Content](#TableofContent)
 * 2. [Wie startet man das Game?](#WiestartetmandasGame)
@@ -17,8 +16,8 @@
 * 5. [Namen](#Namen)
 * 6. [Exposé](#Expos)
 	* 6.1. [Inhalt:](#Inhalt:)
-	* 6.2. [5.2 Zielgeräte](#Zielgerte)
-	* 6.3. [5.3 Positionierung](#Positionierung)
+	* 6.2. [Zielgeräte](#Zielgerte)
+	* 6.3. [Positionierung](#Positionierung)
 	* 6.4. [Risiken](#Risiken)
 
 <!-- vscode-markdown-toc-config
@@ -27,6 +26,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
+----
 
 ##  2. <a name='WiestartetmandasGame'></a>Wie startet man das Game?
 
@@ -52,8 +52,13 @@ b. führe diesen Befehl aus:
 git clone https://github.com/ElioThalmannCode/BinaryLife
 python3 main.py
 ```
+
+---
+
 ##  3. <a name='Kurzfassung'></a>Kurzfassung
 Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidungen die der Spieler in dem Spiel getroffen hat. Es gibt kein genaues Ziel und auch kein genaues Ende es wird einfach so lange gespielt bis du stirbst oder du aufgibst. Die Story besteht aus zufälligen Ereignissen die auf den Spieler treffen. Das Ziel dieses Spiels ist mit den Ereignissen und Schwierigkeiten des Lebens umzugehen.
+
+---
 
 ##  4. <a name='WasgibtesfrElementeindiesemSpiel.'></a>Was gibt es für Elemente in diesem Spiel.
 
@@ -104,13 +109,21 @@ class yourself_class():
         self.age    =   age
 ```
 usw.
+
+---
+
 ##  5. <a name='Namen'></a>Namen
 Es gibt enorm viele Namen in diesem Spiel. Es wird ein zufälliger Name für einen neuen Spieler ausgewählt.
+
+---
+
 ##  6. <a name='Expos'></a>Exposé
 ###  6.1. <a name='Inhalt:'></a>Inhalt:
 Du spielst ein Spieler der zufällig generiert wird. In diesem Spiel gibt es immer wieder zufällige ereignisse die random passieren. Die ereignisse werden nach Alter angepasst. Das Spiel startet in dem du ein kleines Kind bist. Du kannst in diesen Jahren noch nicht viel entscheiden dies übernehmen nämlich deine Eltern für dich. Sobald du dann aber in die Schule gehst, sobald du etwas älter bist, gibt es schon die ersten kindlichen Ereignisse wie zb. du wirst mal wieder von deinem Lehrer zum nachsitzen verdonnert und bekommst ein Brief heim oder du zerstörst aus Versehen das Fenster deines Nachbaren. Dies ist aber auch der Teil in deinem Leben wo du dich für deinen zukünftigen Beruf qualifizieren musst. Wenn du schlecht in der Schule bist kannst du nicht auf die höheren Schulen gehen wo du dann auch in hohe Einkommensstufen kommst. Da kommen wir auch zum nächsten Teil deines Lebens, dem Leben als junger Erwachsener. Das ist ein sehr wichtiger Abschnitt in deinem Leben. In diesem Teil wirst du in deinen Job einsteigen, einige positive wie auch negative Ereignisse werden dir in Nachtclubs passieren und vieleicht wirst du ein Partner fürs Leben erhalten. Du kannst auch hookups und Onlineverabredungen machen. Der nächste Schritt ist das Erwachsenenleben. Du kannst 
-###  6.2. <a name='Zielgerte'></a>5.2 Zielgeräte
+###  6.2. <a name='Zielgerte'></a> Zielgeräte
 Dieses Spiel kann auf jedem Gerät gespielt werden solange es Python unterstützt.
-###  6.3. <a name='Positionierung'></a>5.3 Positionierung
+###  6.3. <a name='Positionierung'></a>Positionierung
 Dieses Spiel ist ein 1/1 Klon zu dem 2018 erschienenen Spiel Bitlife. Es ist ein "Casual Game". Das Spiel ist für jede Altersgruppe fast konzipiert ausser der zu jungen Spieler da es die Option Alkohol oder Drogen zu konsumieren gibt sobald man in ein Nachtclub geht. Bei dem Spiel wird besonders auf das mehrmals durchspielen gesetzt da jeder neuer Spielversuch ein ganz neues Spielerlebnis ist.
 ###  6.4. <a name='Risiken'></a>Risiken
+
+---
