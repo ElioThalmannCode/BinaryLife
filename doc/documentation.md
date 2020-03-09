@@ -15,7 +15,7 @@
 		* 4.4. [yourself](#yourself)
 * 5. [Namen](#Namen)
 * 6. [Exposé](#Expos)
-	* 6.1. [Inhalt:](#Inhalt:)
+	* 6.1. [Inhalt](#InhaltdesGames)
 	* 6.2. [Zielgeräte](#Zielgerte)
 	* 6.3. [Positionierung](#Positionierung)
 	* 6.4. [Risiken](#Risiken)
@@ -118,7 +118,7 @@ Es gibt enorm viele Namen in diesem Spiel. Es wird ein zufälliger Name für ein
 ---
 
 ##  6. <a name='Expos'></a>Exposé
-###  6.1. <a name='Inhalt:'></a>Inhalt:
+###  6.1. <a name='InhaltdesGames'></a>Inhalt:
 Du spielst ein Spieler der zufällig generiert wird. In diesem Spiel gibt es immer wieder zufällige ereignisse die random passieren. Die ereignisse werden nach Alter angepasst. Das Spiel startet in dem du ein kleines Kind bist. Du kannst in diesen Jahren noch nicht viel entscheiden dies übernehmen nämlich deine Eltern für dich. Sobald du dann aber in die Schule gehst, sobald du etwas älter bist, gibt es schon die ersten kindlichen Ereignisse wie zb. du wirst mal wieder von deinem Lehrer zum nachsitzen verdonnert und bekommst ein Brief heim oder du zerstörst aus Versehen das Fenster deines Nachbaren. Dies ist aber auch der Teil in deinem Leben wo du dich für deinen zukünftigen Beruf qualifizieren musst. Wenn du schlecht in der Schule bist kannst du nicht auf die höheren Schulen gehen wo du dann auch in hohe Einkommensstufen kommst. Da kommen wir auch zum nächsten Teil deines Lebens, dem Leben als junger Erwachsener. Das ist ein sehr wichtiger Abschnitt in deinem Leben. In diesem Teil wirst du in deinen Job einsteigen, einige positive wie auch negative Ereignisse werden dir in Nachtclubs passieren und vieleicht wirst du ein Partner fürs Leben erhalten. Du kannst auch hookups und Onlineverabredungen machen. Der nächste Schritt ist das Erwachsenenleben. Du kannst 
 ###  6.2. <a name='Zielgerte'></a> Zielgeräte
 Dieses Spiel kann auf jedem Gerät gespielt werden solange es Python unterstützt.
