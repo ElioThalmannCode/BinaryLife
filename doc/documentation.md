@@ -5,7 +5,6 @@
 ###### Elio Thalmann
 ## 1.Wie führt man das Game aus?
 
-
 #### 1.1 Installiere python3(Wenn du es noch nicht Besitzt)
 
 ##### Linux:
