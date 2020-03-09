@@ -28,9 +28,6 @@
 
 <!-- /TOC -->
 
-
-
-###### Elio Thalmann
 ## 1.Wie startet man das Game?
 
 #### 1.1 Installiere python3(Wenn du es noch nicht Besitzt)
