@@ -1,6 +1,6 @@
 # BinaryLife Dokumentation
 
----
+
 ##  1. <a name='TableofContent'></a>Table of Content
 <!-- vscode-markdown-toc -->
 * 1. [Table of Content](#TableofContent)
@@ -26,7 +26,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-----
+
 
 ##  2. <a name='WiestartetmandasGame'></a>Wie startet man das Game?
 
@@ -53,12 +53,12 @@ git clone https://github.com/ElioThalmannCode/BinaryLife
 python3 main.py
 ```
 
----
+
 
 ##  3. <a name='Kurzfassung'></a>Kurzfassung
 Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidungen die der Spieler in dem Spiel getroffen hat. Es gibt kein genaues Ziel und auch kein genaues Ende es wird einfach so lange gespielt bis du stirbst oder du aufgibst. Die Story besteht aus zufälligen Ereignissen die auf den Spieler treffen. Das Ziel dieses Spiels ist mit den Ereignissen und Schwierigkeiten des Lebens umzugehen.
 
----
+
 
 ##  4. <a name='WasgibtesfrElementeindiesemSpiel.'></a>Was gibt es für Elemente in diesem Spiel.
 
@@ -110,12 +110,12 @@ class yourself_class():
 ```
 usw.
 
----
+
 
 ##  5. <a name='Namen'></a>Namen
 Es gibt enorm viele Namen in diesem Spiel. Es wird ein zufälliger Name für einen neuen Spieler ausgewählt.
 
----
+
 
 ##  6. <a name='Expos'></a>Exposé
 ###  6.1. <a name='InhaltdesGames'></a>Inhalt:
@@ -127,4 +127,4 @@ Dieses Spiel ist ein 1/1 Klon zu dem 2018 erschienenen Spiel Bitlife. Es ist ein
 ###  6.4. <a name='Risiken'></a>Risiken
 Anzeige BitLife wegen gleichem Spielkonzept
 
----
+
