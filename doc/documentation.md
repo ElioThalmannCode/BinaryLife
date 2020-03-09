@@ -33,7 +33,7 @@ Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidung
 
 ## 3.Was gibt es für Elemente in diesem Spiel.
 
-#### 3.1 NPC
+### 3.1 NPC
 NPC ist Englisch und heisst "Non-player character" was soviel heisst wie "Nicht-Spieler-Charakter" also eine Person der du im Spiel begegnest aber der du keine Befehle geben kannst.
 
 So sieht die ```class``` des NPC aus:
@@ -52,8 +52,13 @@ class npc():
         self.looks      =   looks
         self.iq         =   iq
 ```
+<<<<<<< HEAD
 #### 3.2 hood
 Hood ist die englische Abkürzung für Nachbarschaft. Das ist der Ort anderem die Person die du spielst reingeboren wird.
+=======
+### 3.2 hood
+Hood ist die englische Abkürzung für Nachbarschaft. Das ist der Ort andem die Person die du spielst reingeboren wird.
+>>>>>>> 8733a83cf7a1da0d6542729eda2e5cf70238f168
 So sieht die hood ```class``` aus:
 ```python
 class hood():
@@ -82,6 +87,7 @@ class yourself_class():
 usw.
 ## 4. Namen
 Es gibt enorm viele Namen in diesem Spiel. Es wird ein zufälliger Name für einen neuen Spieler ausgewählt.
+<<<<<<< HEAD
 ## 5. Exposé
 ### 5.1 Inhalt:
 Du spielst ein Spieler der zufällig generiert wird. In diesem Spiel gibt es immer wieder zufällige ereignisse die random passieren. Die ereignisse werden nach Alter angepasst. Das Spiel startet in dem du ein kleines Kind bist. Du kannst in diesen Jahren noch nicht viel entscheiden dies übernehmen nämlich deine Eltern für dich. Sobald du dann aber in die Schule gehst, sobald du etwas älter bist, gibt es schon die ersten kindlichen Ereignisse wie zb. du wirst mal wieder von deinem Lehrer zum nachsitzen verdonnert und bekommst ein Brief heim oder du zerstörst aus Versehen das Fenster deines Nachbaren. Dies ist aber auch der Teil in deinem Leben wo du dich für deinen zukünftigen Beruf qualifizieren musst. Wenn du schlecht in der Schule bist kannst du nicht auf die höheren Schulen gehen wo du dann auch in hohe Einkommensstufen kommst. Da kommen wir auch zum nächsten Teil deines Lebens, dem Leben als junger Erwachsener. Das ist ein sehr wichtiger Abschnitt in deinem Leben. In diesem Teil wirst du in deinen Job einsteigen, einige positive wie auch negative Ereignisse werden dir in Nachtclubs passieren und vieleicht wirst du ein Partner fürs Leben erhalten. Du kannst auch hookups und Onlineverabredungen 
@@ -90,3 +96,5 @@ Dieses Spiel kann auf jedem Gerät gespielt werden solange es Python unterstütz
 ### 5.3 Positionierung
 Dieses Spiel ist ein 1/1 Klon zu dem 2018 erschienenen Spiel Bitlife. Es ist ein "Casual Game". Das Spiel ist für jede Altersgruppe fast konzipiert ausser der zu jungen Spieler da es die Option Alkohol oder Drogen zu konsumieren gibt sobald man in ein Nachtclub geht. Bei dem Spiel wird besonders auf das mehrmals durchspielen gesetzt da jeder neuer Spielversuch ein ganz neues Spielerlebnis ist.
 ### Risiken
+=======
+>>>>>>> 8733a83cf7a1da0d6542729eda2e5cf70238f168
