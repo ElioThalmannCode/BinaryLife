@@ -6,9 +6,9 @@
 
 - [BinaryLife Dokumentation](#binarylife-dokumentation)
     - [Table of Content](#table-of-content)
-                    - [Elio Thalmann](#elio-thalmann)
+    
     - [1.Wie startet man das Game?](#1wie-startet-man-das-game)
-            - [1.1 Installiere python3(Wenn du es noch nicht Besitzt)](#11-installiere-python3wenn-du-es-noch-nicht-besitzt)
+        - [1.1 Installiere python3(Wenn du es noch nicht Besitzt)](#11-installiere-python3wenn-du-es-noch-nicht-besitzt)
                 - [Linux:](#linux)
                 - [Windows:](#windows)
                 - [MacOS:](#macos)
