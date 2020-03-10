@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+
 # BinaryLife Dokumentation
 #### The Game about Live
 
 ---
-=======
 
->>>>>>> 8733a83cf7a1da0d6542729eda2e5cf70238f168
 ###### Elio Thalmann
 ## 1.Wie führt man das Game aus?
 
