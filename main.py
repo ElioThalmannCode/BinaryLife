@@ -4,24 +4,40 @@ import random
 import time
 
 
-def menü()
+    
+
+
+def menü(yourself):
     print("""
 Was willst du tun?
 1   |   Karriere
 2   |   Aktivitäten
 3   |   Personen
-4   |   Besitztümer
+4   |   Besitztümer/Tiere
 
 Nur Enter = nächstes Jahr
 """)
-
+    selection = input("--->")
+    if selection == "":
+        next_year()
+    elif selection == "1":
+        career(yourself)
+    elif selection == "2":
+        activities(yourself)
+    elif selection == "3":
+        people(yourself)
+    elif selection == "4":
+        prop(yourself)
+    else:
+        print("Du hast etwas falsches eingegeben!")
+        menü()
 
 def init_life():
     """
     creates the player you play with
     """
     gender = random.randrange(1, 3)
-    life = player_classes.yourself_class(random.choice(possible_stats.possible_male_first_names) if gender == 1 else random.choice(possible_stats.possible_female_first_names), random.choice(possible_stats.possible_last_names), gender, random.randrange(70,100), random.randrange(1,100), random.randrange(1,100), 0, 0)
+    life = player_classes.yourself_class(random.choice(possible_stats.possible_male_first_names) if gender == 1 else random.choice(possible_stats.possible_female_first_names), random.choice(possible_stats.possible_last_names), gender, random.randrange(70,100), random.randrange(1,100), random.randrange(1,100), 0, 0, None, None)
     return life
 
 def hood_init():
@@ -51,7 +67,20 @@ def create_family(yourself):
     family = [sisters, brothers, mom, dad]
     print(family)
     return [sisters, brothers, mom, dad]
-
+def people(yourself)
+    pass
+def activities(yourself):
+    pass
+def career(yourself):
+    print(yourself.school)
+    if yourself.school == None:
+        pass
+    else:
+        pass
+    if yourself.work == None:
+        pass
+    else:
+        pass
 
 def start():
     yourself = init_life()
@@ -80,7 +109,7 @@ Deine Mutter heisst {family[2].first_name} {family[2].last_name} und dein Vater 
 Deine Familie lebt in einer {'sehr armen' if hood.save == 1 else ('normal wohlhabenden' if hood.save == 2 else 'sehr armen')} Gegend mit einem {'sehr gutem' if hood.education == 1 else ('mittelmässigen' if hood.education == 2 else 'sehr schlechtem')} Schulsystem.
     """)
     input("Enter drücken zum starten")
-    hallo()
+    menü(yourself)
 
 
 def main():
