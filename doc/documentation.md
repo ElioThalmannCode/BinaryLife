@@ -36,7 +36,6 @@
 ```bash
 sudo apt install python3 #ubuntu
 sudo dnf install python3 #fedora/debian
-git clone https://github.com/ElioThalmannCode/BinaryLife
 ```
 ##### Windows:
 Tutorial: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
