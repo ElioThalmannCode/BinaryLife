@@ -1,5 +1,5 @@
 
-# BinaryLife Dokumentation
+# BinaryLife
 #### The Game about Live
 
 ---
@@ -32,3 +32,5 @@ python3 main.py
 ```
 ## 2.Was ist die Story von diesem Spiel?
 Im Grunde wird die Story des Spielers selber geschrieben anhand der Endscheidungen die der Spieler in dem Spiel getroffen hat. Es gibt kein genaues Ziel und auch kein genaues Ende es wird einfach so lange gespielt bis du stirbst oder du aufgibst.
+
+Die ganze dokumentation ist im doc Ordner.
