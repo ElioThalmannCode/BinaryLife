@@ -19,6 +19,7 @@
 	* 6.2. [Zielgeräte](#Zielgerte)
 	* 6.3. [Positionierung](#Positionierung)
 	* 6.4. [Risiken](#Risiken)
+* 7. [Arbeitsjournal](#journal)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -125,5 +126,7 @@ Dieses Spiel kann auf jedem Gerät gespielt werden solange es Python unterstütz
 Dieses Spiel ist ein 1/1 Klon zu dem 2018 erschienenen Spiel Bitlife. Es ist ein "Casual Game". Das Spiel ist für jede Altersgruppe fast konzipiert ausser der zu jungen Spieler da es die Option Alkohol oder Drogen zu konsumieren gibt sobald man in ein Nachtclub geht. Bei dem Spiel wird besonders auf das mehrmals durchspielen gesetzt da jeder neuer Spielversuch ein ganz neues Spielerlebnis ist.
 ###  6.4. <a name='Risiken'></a>Risiken
 Anzeige BitLife wegen gleichem Spielkonzept
+### 7. <a name="journal"></a>Arbeitsjournal 
+Mittwoch, 18. März 2020:
 
-
+Ich habe das erste GUI erstellt und begonnen das Programm auf GUI umzuschreiben. 

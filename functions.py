@@ -2,11 +2,8 @@ import player_classes
 import possible_stats
 import random
 import time
-
-
-    
-
-
+from tkinter import *
+from tkinter import ttk
 def menü(yourself):
     print("""
 Was willst du tun?
@@ -67,7 +64,9 @@ def create_family(yourself):
     family = [sisters, brothers, mom, dad]
     print(family)
     return [sisters, brothers, mom, dad]
-def people(yourself)
+def next_year(yourself):
+    pass
+def people(yourself): 
     pass
 def activities(yourself):
     pass
@@ -109,15 +108,13 @@ Deine Mutter heisst {family[2].first_name} {family[2].last_name} und dein Vater 
 Deine Familie lebt in einer {'sehr armen' if hood.save == 1 else ('normal wohlhabenden' if hood.save == 2 else 'sehr armen')} Gegend mit einem {'sehr gutem' if hood.education == 1 else ('mittelmässigen' if hood.education == 2 else 'sehr schlechtem')} Schulsystem.
     """)
     input("Enter drücken zum starten")
-    menü(yourself)
 
 
-def main():
+def say_hello():
     """
     Welcomes you to the programm and give you the option to create life or exit the game.
     """
-    print("Hallo und willkommen zu Binarylife.")
-    start()
+    return ("Hallo und willkommen zu Binarylife.")
 
 if __name__ == "__main__":
-    main()
+    say_hello()
