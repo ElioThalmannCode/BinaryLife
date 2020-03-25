@@ -3,7 +3,7 @@ class yourself_class():
     This is the class of the player you represent in the game.
     This is very important because this will lead you trew the game.
     """
-    def __init__(self, first_name, last_name, gender, health, iq, looks, fame, age, work, school):
+    def __init__(self, first_name, last_name, gender, health, iq, looks, fame):
         self.first_name =   first_name
         self.last_name  =   last_name
         self.gender =   gender
@@ -11,9 +11,7 @@ class yourself_class():
         self.iq     =   iq
         self.looks  =   looks
         self.fame   =   fame
-        self.age    =   age
-        self.work   =   work
-        self.school =   school
+
 class hood():
     """
     This is the hood the caracter lives in.

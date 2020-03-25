@@ -10,7 +10,7 @@ from pydblite import *
 from kivy.factory import Factory            
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
-
+import functions
 Builder.load_string("""
 <MenuScreen>:
 
@@ -21,22 +21,37 @@ Builder.load_string("""
             size: self.texture_size
         Button:
             text: 'Start'
-            on_press: root.manager.current = 'start'
+            on_press: 
+                root.init_life()
+                root.manager.current = 'start'
 
 
 <StartScreen>:
+    text_field: text_field
     BoxLayout:
-        Button:
-            text: 'Back to menu'
-            on_press: root.manager.current = 'menu'
-""")
-
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                id: text_field
+                text: "hallo"
+        BoxLayout:
+            size: root.width, 100
+            size_hint: None, None
+            orientation: 'horizontal'
+            Button:
+                text: 'next year'
+                on_press: 
+                    root.do_action()
+""")    
 # Declare both screens
 class MenuScreen(Screen):
-    pass
+    def init_life(self):
+        pass
 
 class StartScreen(Screen):
-    pass
+    def do_action(self):
+        self.text_field.text = functions.start()
 
 # Create the screen manager
 sm = ScreenManager()

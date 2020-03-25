@@ -130,3 +130,7 @@ Anzeige BitLife wegen gleichem Spielkonzept
 Mittwoch, 18. März 2020:
 
 Ich habe das erste GUI erstellt und begonnen das Programm auf GUI umzuschreiben. 
+
+Mittwoch, 25. März 2020:
+
+Ich habe das GUI auf Kivi geschrieben und dann der Startscreen und die erste Szene mit dem beginn des Spiels auf GUI geschrieben. Ausserdem habe ich die Haubtfunktion des Spiels "next_year" geschrieben.

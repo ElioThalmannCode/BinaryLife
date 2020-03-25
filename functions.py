@@ -4,30 +4,6 @@ import random
 import time
 from tkinter import *
 from tkinter import ttk
-def menü(yourself):
-    print("""
-Was willst du tun?
-1   |   Karriere
-2   |   Aktivitäten
-3   |   Personen
-4   |   Besitztümer/Tiere
-
-Nur Enter = nächstes Jahr
-""")
-    selection = input("--->")
-    if selection == "":
-        next_year()
-    elif selection == "1":
-        career(yourself)
-    elif selection == "2":
-        activities(yourself)
-    elif selection == "3":
-        people(yourself)
-    elif selection == "4":
-        prop(yourself)
-    else:
-        print("Du hast etwas falsches eingegeben!")
-        menü()
 
 def init_life():
     """
@@ -62,31 +38,10 @@ def create_family(yourself):
         brother = player_classes.npc(random.choice(possible_stats.possible_male_first_names),yourself.last_name, 1, random.randrange(2,4), random.randrange(70,100),0,random.randrange(1,5), True, True, random.randrange(1,100), random.randrange(1,100))
         brothers.append(brother)
     family = [sisters, brothers, mom, dad]
-    print(family)
     return [sisters, brothers, mom, dad]
-def next_year(yourself):
-    pass
-def people(yourself): 
-    pass
-def activities(yourself):
-    pass
-def career(yourself):
-    print(yourself.school)
-    if yourself.school == None:
-        pass
-    else:
-        pass
-    if yourself.work == None:
-        pass
-    else:
-        pass
 
 def start():
-    yourself = init_life()
-    print(yourself)
-    family = create_family(yourself)
-    hood = hood_init()
-    print(f"""
+    return(f"""
 Hallo und willkommen zu Bitlife.
 
 Deine Stats:
@@ -100,9 +55,7 @@ Deine Inteligenz:
 
 Dein Aussehen:
 |{(yourself.looks // 5) * "█"}|{yourself.looks}/100
-  """)
-    time.sleep(3)
-    print(f"""
+
 Dein Name ist {yourself.first_name} {yourself.last_name}. Du hast {len(family[0])} Schwester/n und {len(family[1])} Bruder/Brüder.
 Deine Mutter heisst {family[2].first_name} {family[2].last_name} und dein Vater heisst {family[3].first_name} {family[3].last_name}.
 Deine Familie lebt in einer {'sehr armen' if hood.save == 1 else ('normal wohlhabenden' if hood.save == 2 else 'sehr armen')} Gegend mit einem {'sehr gutem' if hood.education == 1 else ('mittelmässigen' if hood.education == 2 else 'sehr schlechtem')} Schulsystem.
@@ -116,5 +69,16 @@ def say_hello():
     """
     return ("Hallo und willkommen zu Binarylife.")
 
-if __name__ == "__main__":
-    say_hello()
+def next_year()
+    year ++ 1
+    
+    if year < 6 and year > 0:
+        event = preschool()
+    if year < 17 and year > 5:
+        event = school()
+    if year < 60 and year > 15
+
+yourself = init_life()
+family = create_family(yourself)
+hood = hood_init()
+year = 0
