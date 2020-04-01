@@ -4,13 +4,14 @@ import random
 import time
 from tkinter import *
 from tkinter import ttk
+import random
 
 def init_life():
     """
     creates the player you play with
     """
     gender = random.randrange(1, 3)
-    life = player_classes.yourself_class(random.choice(possible_stats.possible_male_first_names) if gender == 1 else random.choice(possible_stats.possible_female_first_names), random.choice(possible_stats.possible_last_names), gender, random.randrange(70,100), random.randrange(1,100), random.randrange(1,100), 0, 0, None, None)
+    life = player_classes.yourself_class(random.choice(possible_stats.possible_male_first_names) if gender == 1 else random.choice(possible_stats.possible_female_first_names), random.choice(possible_stats.possible_last_names), gender, random.randrange(70,100), random.randrange(1,100), random.randrange(1,100), 0)
     return life
 
 def hood_init():
@@ -41,6 +42,9 @@ def create_family(yourself):
     return [sisters, brothers, mom, dad]
 
 def start():
+    """
+    The message with your stats at the Start of the game
+    """
     return(f"""
 Hallo und willkommen zu Bitlife.
 
@@ -69,16 +73,95 @@ def say_hello():
     """
     return ("Hallo und willkommen zu Binarylife.")
 
-def next_year()
-    year ++ 1
+def preschool():
+    '''
+    Starts the events for the Preschool
+    '''
+    randomint = random.randrange(1,5)
+    if random == 1:
+        return("erstes event")
+    elif randomint == 2:
+        return("2. event")
+    elif randomint == 3:
+        return("3.event")
+    elif randomint == 4:
+        return("4.event")
+    elif randomint == 5:
+        return("5.event")
     
-    if year < 6 and year > 0:
+    
+    
+def school():
+    '''
+    Starts the events for the School
+    '''
+    randomint = random.randrange(1,5)
+    if randomint == 1:
+        return("erstes event")
+    elif randomint == 2:
+        return("2. event")
+    elif randomint == 3:
+        return("3.event")
+    elif randomint == 4:
+        return("4.event")
+    elif randomint == 5:
+        return("5.event")
+def job():
+    '''
+    Starts the events for the Job
+    '''
+    randomint == random.randrange(1,5)
+    if randomint == 1:
+        return("erstes event")
+    elif randomint == 2:
+        return("2. event")
+    elif randomint == 3:
+        return("3.event")
+    elif randomint == 4:
+        return("4.event")
+    elif randomint == 5:
+        return("5.event")
+def senior():
+    '''
+    Starts the events for the endgame(;
+    '''
+    randomint == random.randrange(1,5)
+    if randomint == 1:
+        return("erstes event")
+    elif randomint == 2:
+        return("2. event")
+    elif randomint == 3:
+        return("3.event")
+    elif randomint == 4:
+        return("4.event")
+    elif randomint == 5:
+        return("5.event")
+def dead():
+    '''
+    you die
+    '''
+    pass
+def next_year():
+    year ++ 1
+    print(year)
+    if year == 0:
+        return(start())
+    elif year < 6 and year > 0:
         event = preschool()
-    if year < 17 and year > 5:
+    elif year < 17 and year > 5:
         event = school()
-    if year < 60 and year > 15
+    elif year < 61 and year > 15:
+        event = job()
+    elif year < 81 and year > 99:
+        event = senior()
+    elif year == 100:
+        event = dead()
+    else:
+        print("e")
+
 
 yourself = init_life()
 family = create_family(yourself)
 hood = hood_init()
 year = 0
+next_year()

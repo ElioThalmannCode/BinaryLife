@@ -10,6 +10,8 @@ from pydblite import *
 from kivy.factory import Factory            
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
+from kivy.clock import Clock
+
 import functions
 Builder.load_string("""
 <MenuScreen>:
@@ -34,7 +36,7 @@ Builder.load_string("""
             orientation: 'horizontal'
             Label:
                 id: text_field
-                text: "hallo"
+                text: root.text
         BoxLayout:
             size: root.width, 100
             size_hint: None, None
@@ -42,21 +44,54 @@ Builder.load_string("""
             Button:
                 text: 'next year'
                 on_press: 
-                    root.do_action()
+                    root.manager.current = 'event'
+                    root.add_year()
+
+
+
+<EventScreen>:
+    button: button
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                text: root.event_text
+        BoxLayout:
+            size: root.width, 100
+            size_hint: None, None
+            orientation: 'horizontal'
+            Button:
+                text: "Event beenden"
+                id: button
+                on_press: 
+                    root.manager.current = 'start'
+                    
 """)    
-# Declare both screens
+
+# Declare screens
 class MenuScreen(Screen):
     def init_life(self):
         pass
 
 class StartScreen(Screen):
-    def do_action(self):
-        self.text_field.text = functions.start()
+    text = functions.start()
+    def add_year(self):
+        functions.year = functions.year + 1
+        print(functions.year)
+    def update(self, dt, arg_1, arg_2):
+        self.name = arg_1
+        sleep(5)
+        self.name = arg_2
+class EventScreen(Screen):
+    event_text = str(functions.year)
+
 
 # Create the screen manager
 sm = ScreenManager()
 sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(StartScreen(name='start'))
+sm.add_widget(EventScreen(name='event'))
 
 class TestApp(App):
 
