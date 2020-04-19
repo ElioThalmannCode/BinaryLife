@@ -11,7 +11,7 @@ def init_life():
     creates the player you play with
     """
     gender = random.randrange(1, 3)
-    life = player_classes.yourself_class(random.choice(possible_stats.possible_male_first_names) if gender == 1 else random.choice(possible_stats.possible_female_first_names), random.choice(possible_stats.possible_last_names), gender, random.randrange(70,100), random.randrange(1,100), random.randrange(1,100), 0)
+    life = player_classes.yourself_class(random.choice(possible_stats.possible_male_first_names) if gender == 1 else random.choice(possible_stats.possible_female_first_names), random.choice(possible_stats.possible_last_names), gender, random.randrange(70,100), random.randrange(1,100), random.randrange(1,100), random.randrange(50,100))
     return life
 
 def hood_init():
@@ -60,11 +60,31 @@ Deine Inteligenz:
 Dein Aussehen:
 |{(yourself.looks // 5) * "█"}|{yourself.looks}/100
 
+Deine Glücklichkeit:
+|{(yourself.happy // 5) * "█"}|{yourself.happy}/100
+
 Dein Name ist {yourself.first_name} {yourself.last_name}. Du hast {len(family[0])} Schwester/n und {len(family[1])} Bruder/Brüder.
 Deine Mutter heisst {family[2].first_name} {family[2].last_name} und dein Vater heisst {family[3].first_name} {family[3].last_name}.
 Deine Familie lebt in einer {'sehr armen' if hood.save == 1 else ('normal wohlhabenden' if hood.save == 2 else 'sehr armen')} Gegend mit einem {'sehr gutem' if hood.education == 1 else ('mittelmässigen' if hood.education == 2 else 'sehr schlechtem')} Schulsystem.
     """)
-    input("Enter drücken zum starten")
+
+def update():
+    """
+    Shows your Stats
+    """
+    return(f"""
+    Deine Gesundheit:
+|{(yourself.health // 5) * "█"}|{yourself.health}/100
+
+Deine Inteligenz:
+|{(yourself.iq // 5) * "█"}|{yourself.iq}/100
+
+Dein Aussehen:
+|{(yourself.looks // 5) * "█"}|{yourself.looks}/100
+
+Deine Glücklichkeit:
+|{(yourself.happy // 5) * "█"}|{yourself.happy}/100
+""")
 
 
 def say_hello():
@@ -145,8 +165,6 @@ def dead():
     '''
     pass
 def next_year():
-    year ++ 1
-    print(year)
     if year < 6 and year > -1:
         event,yes,no = preschool()
     elif year < 17 and year > 5:

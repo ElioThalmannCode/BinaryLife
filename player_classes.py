@@ -3,14 +3,14 @@ class yourself_class():
     This is the class of the player you represent in the game.
     This is very important because this will lead you trew the game.
     """
-    def __init__(self, first_name, last_name, gender, health, iq, looks, fame):
+    def __init__(self, first_name, last_name, gender, health, iq, looks, happy):
         self.first_name =   first_name
         self.last_name  =   last_name
         self.gender =   gender
         self.health =   health
         self.iq     =   iq
         self.looks  =   looks
-        self.fame   =   fame
+        self.happy  =   happy
 
 class hood():
     """
