@@ -31,6 +31,7 @@ Builder.load_string("""
 
 <StartScreen>:
     text_field: text_field
+    year_field: year_field
     BoxLayout:
         orientation: 'vertical'
         BoxLayout:
@@ -43,7 +44,8 @@ Builder.load_string("""
             size_hint: None, None
             orientation: 'horizontal'
             Label:
-                text: "Jahre Alt"
+                id: year_field
+                text: root.yo
             Button:
                 text: 'nächstes Jahr'
                 on_press: 
@@ -98,8 +100,10 @@ class MenuScreen(Screen):
 
 class StartScreen(Screen):
     text = functions.start()
+    yo = (f"Du bist {str(functions.year)} Jahre alt.")
     def update(self):
         self.text_field.text = functions.update()
+        self.year_field.text = (f"Du bist {str(functions.year)} Jahre alt.")
 class EventScreen(Screen):
     def set_text(self):
         global event,yes,no
@@ -112,10 +116,21 @@ class EventScreen(Screen):
         self.btn = Button(text=(f"{yes[0]}\n Klicke zum fortfahren"), on_press=lambda x:self.change())
         self.add_widget(self.btn)
         functions.year += 1
+        functions.yourself.health += yes[2]
+        functions.yourself.happy += yes[1]
+        functions.yourself.iq += yes[3]
+        if functions.yourself.health < 1:
+            self.root_window.close()
     def no(self):
         self.btn = Button(text=(f"{no[0]}\n Klicke zum fortfahren"), on_press=lambda x:self.change())
         self.add_widget(self.btn)
         functions.year += 1
+        functions.yourself.health += no[2]
+        functions.yourself.happy += no[1]
+        functions.yourself.iq += no[3]
+        if functions.yourself.health < 1:
+            App.get_running_app().stop()
+
 
 
 
