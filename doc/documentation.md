@@ -37,20 +37,24 @@
 ```bash
 sudo apt install python3 #ubuntu
 sudo dnf install python3 #fedora/debian
+
+pip3 -m install kivy
 ```
 ##### Windows:
 Tutorial: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
+https://kivy.org/doc/stable/installation/installation-windows.html
 ##### MacOS:
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install python3 
+pip3 -m install kivy
 ```
 ####  2.2. <a name='FhredasGameaus'></a>Führe das Game aus
 a. Gehe zum Zielordner mit bash oder cmd.
 b. führe diesen Befehl aus:
 ```bash
 git clone https://github.com/ElioThalmannCode/BinaryLife
-python3 main.py
+python3 GUI.py
 ```
 
 
