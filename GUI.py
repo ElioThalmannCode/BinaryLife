@@ -1,18 +1,20 @@
-import kivy                                 
-from kivy.app import App                    
-from kivy.uix.label import Label            
-from kivy.uix.gridlayout import GridLayout  
-from kivy.uix.textinput import TextInput    
-from kivy.uix.button import Button          
-from kivy.uix.widget import Widget          
-from kivy.properties import ObjectProperty  
-from pydblite import *                      
-from kivy.factory import Factory            
+import kivy
+from time import sleep
+
+from kivy.app import App
+from kivy.uix.label import Label
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.textinput import TextInput
+from kivy.uix.button import Button
+from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty 
+from kivy.factory import Factory
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
-from kivy.clock import Clock
+
 
 import functions
+
 Builder.load_string("""
 <MenuScreen>:
 
@@ -45,29 +47,46 @@ Builder.load_string("""
                 text: 'next year'
                 on_press: 
                     root.manager.current = 'event'
-                    root.add_year()
 
 
 
 <EventScreen>:
     button: button
+    text_event: text_event
     BoxLayout:
         orientation: 'vertical'
         BoxLayout:
             orientation: 'horizontal'
             Label:
-                text: root.event_text
+                text: "Klick"
+                id: text_event
         BoxLayout:
             size: root.width, 100
             size_hint: None, None
             orientation: 'horizontal'
             Button:
-                text: "Event beenden"
+                text: "Event anzeigen"
                 id: button
                 on_press: 
-                    root.manager.current = 'start'
+                    root.set_text()
+            BoxLayout:
+                orientation: 'vertical'
+                Button: 
+                    text: "ja"
+                    on_press:
+                        root.yes()
+                Button: 
+                    text: "nein"
+                    on_press:
+                        root.no()
+
+#            Button:
+#                text: "Event beenden"
+#                id: button
+#                on_press: 
+#                    root.manager.current = 'start'
                     
-""")    
+""")
 
 # Declare screens
 class MenuScreen(Screen):
@@ -76,15 +95,19 @@ class MenuScreen(Screen):
 
 class StartScreen(Screen):
     text = functions.start()
-    def add_year(self):
-        functions.year = functions.year + 1
-        print(functions.year)
-    def update(self, dt, arg_1, arg_2):
-        self.name = arg_1
-        sleep(5)
-        self.name = arg_2
 class EventScreen(Screen):
-    event_text = str(functions.year)
+    def set_text(self):
+        global event,yes,no
+        event,yes,no = functions.next_year()
+        self.text_event.text = event
+    def yes(self):
+        self.text_event.text = yes[0]
+        self.remove_widget(self.btn)
+
+    def no(self):
+        self.text_event.text = no[0]
+
+
 
 
 # Create the screen manager

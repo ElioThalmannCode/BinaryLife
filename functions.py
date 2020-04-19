@@ -77,9 +77,12 @@ def preschool():
     '''
     Starts the events for the Preschool
     '''
-    randomint = random.randrange(1,5)
-    if random == 1:
-        return("erstes event")
+    randomint = 1 #random.randrange(1,5)
+    if randomint == 1:
+        return("""
+Dein geliebtes Haustier mit dem Namen Knuffel ist gestorben. Du bist sehr traurig.
+Willst du deine Eltern auffordern ein neues zu kaufen?
+""", ["Deine Eltern wollen dir kein neues Haustier kaufen.\nDu bist Traurig deswegen.\n-10 Glücklichkeit", -2, 0], ["haram"])
     elif randomint == 2:
         return("2. event")
     elif randomint == 3:
@@ -144,24 +147,22 @@ def dead():
 def next_year():
     year ++ 1
     print(year)
-    if year == 0:
-        return(start())
-    elif year < 6 and year > 0:
-        event = preschool()
+    if year < 6 and year > -1:
+        event,yes,no = preschool()
     elif year < 17 and year > 5:
-        event = school()
+        even,yes,no = school()
     elif year < 61 and year > 15:
-        event = job()
+        event,yes,no = job()
     elif year < 81 and year > 99:
-        event = senior()
+        event,yes,no = senior()
     elif year == 100:
         event = dead()
     else:
-        print("e")
+        print("error")
+    return event,yes,no
 
 
 yourself = init_life()
 family = create_family(yourself)
 hood = hood_init()
 year = 0
-next_year()
