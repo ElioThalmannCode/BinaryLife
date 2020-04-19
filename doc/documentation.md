@@ -18,8 +18,7 @@
 	* 6.1. [Inhalt](#InhaltdesGames)
 	* 6.2. [Zielgeräte](#Zielgerte)
 	* 6.3. [Positionierung](#Positionierung)
-	* 6.4. [Risiken](#Risiken)
-* 7. [Arbeitsjournal](#journal)
+* 7. [Probleme im Aktuellen Stand](#problems)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -127,14 +126,6 @@ Du spielst ein Spieler der zufällig generiert wird. In diesem Spiel gibt es imm
 ###  6.2. <a name='Zielgerte'></a> Zielgeräte
 Dieses Spiel kann auf jedem Gerät gespielt werden solange es Python unterstützt.
 ###  6.3. <a name='Positionierung'></a>Positionierung
-Dieses Spiel ist ein 1/1 Klon zu dem 2018 erschienenen Spiel Bitlife. Es ist ein "Casual Game". Das Spiel ist für jede Altersgruppe fast konzipiert ausser der zu jungen Spieler da es die Option Alkohol oder Drogen zu konsumieren gibt sobald man in ein Nachtclub geht. Bei dem Spiel wird besonders auf das mehrmals durchspielen gesetzt da jeder neuer Spielversuch ein ganz neues Spielerlebnis ist.
-###  6.4. <a name='Risiken'></a>Risiken
-Anzeige BitLife wegen gleichem Spielkonzept
-### 7. <a name="journal"></a>Arbeitsjournal 
-Mittwoch, 18. März 2020:
-
-Ich habe das erste GUI erstellt und begonnen das Programm auf GUI umzuschreiben. 
-
-Mittwoch, 25. März 2020:
-
-Ich habe das GUI auf Kivi geschrieben und dann der Startscreen und die erste Szene mit dem beginn des Spiels auf GUI geschrieben. Ausserdem habe ich die Haubtfunktion des Spiels "next_year" geschrieben.
+Es ist ein "Casual Game". Das Spiel ist für jede Altersgruppe fast konzipiert ist. Bei dem Spiel wird besonders auf das mehrmals durchspielen gesetzt da jeder neuer Spielversuch ein ganz neues Spielerlebnis ist.
+##  7. <a name='problems'></a>Probleme im aktuellen Stand
+Es muss immer ein Knopf gedrückt werden bevor es ein Update gibt. Es war nicht so Inteligent Kivy zu verwenden da es nicht so gut für Games ist und sehr schwer. Viele Sachen noch nicht fertig(NPC, wenig Content, Geld, Schulen usw.). Ich habe mir zu viel vorgenommen.
